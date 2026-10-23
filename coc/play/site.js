@@ -58,4 +58,22 @@ const track = document.getElementById('video-track');
 track.src = `video/promo-${lang}.vtt`;
 track.srclang = lang;
 track.label = copy.language;
+// Resolve the language before enabling GIF-like playback, so no default-language
+// clip starts downloading first. Native controls keep the loop easy to pause.
+const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+video.muted = true;
+video.defaultMuted = true;
+video.loop = true;
+video.autoplay = !reducedMotion.matches;
 video.load();
+if (video.autoplay) {
+  // Power/data-saving modes may still block autoplay; leave manual controls usable.
+  void video.play().catch(() => {});
+}
+reducedMotion.addEventListener('change', event => {
+  if (event.matches) {
+    video.autoplay = false;
+    video.pause();
+  }
+  // Do not resume automatically after the visitor has paused the video.
+});
