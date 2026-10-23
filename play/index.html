@@ -3,74 +3,17 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; media-src 'self'; connect-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'">
-  <meta name="description" content="Cassatie of Cel: de Belgische rechtsquiz. Probeer gratis acht vragen, bekijk het spel en ontdek meer dan 1.000 vragen met juridische bronnen.">
-  <meta name="theme-color" content="#10271e">
-  <title>Cassatie of Cel — Dé Belgische rechtsquiz</title>
-  <link rel="icon" href="assets/icon-192.png">
-  <link rel="stylesheet" href="site.css">
-  <script src="site.js" defer></script>
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; base-uri 'none'; form-action 'none'">
+  <meta name="robots" content="noindex">
+  <link rel="canonical" href="https://verdictstudios.be/coc/play/">
+  <title>Cassatie of Cel — Verder naar het spel</title>
+  <script src="/play/redirect.js" defer></script>
+  <noscript><meta http-equiv="refresh" content="0;url=/coc/play/"></noscript>
 </head>
 <body>
-  <a class="skip" href="#main" data-copy="skip">Naar de inhoud</a>
-  <header class="masthead page-width">
-    <a class="studio" href="./">VERDICT STUDIOS</a>
-    <nav class="languages" aria-label="Taal / Langue / Sprache / Language">
-      <a href="?lang=nl" lang="nl" data-lang="nl">NL<span class="sr-only"> Nederlands</span></a>
-      <a href="?lang=fr" lang="fr" data-lang="fr">FR<span class="sr-only"> Français</span></a>
-      <a href="?lang=de" lang="de" data-lang="de">DE<span class="sr-only"> Deutsch</span></a>
-      <a href="?lang=en" lang="en" data-lang="en">EN<span class="sr-only"> English</span></a>
-    </nav>
-  </header>
-  <main id="main" class="page-width">
-    <section class="hero" aria-labelledby="app-title">
-      <div class="hero-copy">
-        <p class="eyebrow" data-copy="subtitle">Dé Belgische rechtsquiz</p>
-        <h1 id="app-title" data-copy="name">Cassatie of Cel</h1>
-        <p class="hero-line" data-copy="hook">Ken jij het Belgische recht?</p>
-        <p class="intro" data-copy="intro">Pleiten voor de rechtbank of zonder klok studeren. Meer dan 1.000 vragen, telkens met uitleg en een link naar de juridische bron.</p>
-        <div class="actions">
-          <a class="button primary" id="hero-demo" href="demo/?lang=nl" data-copy="try">Probeer 8 gratis vragen</a>
-          <a class="button secondary" href="#watch" data-copy="watch">Bekijk het spel</a>
-        </div>
-        <p class="assurance" data-copy="assurance">Geen abonnement. Geen reclame. Het volledige spel werkt offline.</p>
-      </div>
-      <figure class="hero-art">
-        <img src="assets/lawyer.webp" width="960" height="960" alt="Een advocaat achter de gouden tralies van een cel" id="hero-image" fetchpriority="high">
-      </figure>
-    </section>
-    <section class="features" aria-label="Wat zit er in het spel?" id="features">
-      <article><span class="feature-mark" aria-hidden="true">§</span><h2 data-copy="sourceTitle">Niet alleen het juiste antwoord</h2><p data-copy="sourceBody">Lees waarom het klopt en raadpleeg de juridische bron. Met extra vragen over het nieuwe Strafwetboek, strafvordering en sociaal strafrecht.</p></article>
-      <article><span class="feature-mark" aria-hidden="true">01</span><h2 data-copy="playTitle">Eén fout. De cel.</h2><p data-copy="playBody">Klim door de Belgische rechtbanken, kies gunsten en zet je hulplijnen slim in. Of kies de oefenrang en leer zonder klok.</p></article>
-      <article><span class="feature-mark" aria-hidden="true">↺</span><h2 data-copy="studyTitle">Ook zonder een run te spelen</h2><p data-copy="studyBody">Zoek vragen, oefen per rechtsgebied, bewaar bladwijzers en herhaal wat je nog niet beheerst. In het Nederlands, Frans, Duits of Engels.</p></article>
-    </section>
-    <section class="preview-section" aria-labelledby="sample-title">
-      <div class="sample-card">
-        <p class="eyebrow" data-copy="before">Eerst proberen</p>
-        <h2 id="sample-title" data-copy="sampleTitle">Acht vragen. Jij pleit.</h2>
-        <p data-copy="sampleBody">Een korte, vereenvoudigde browserproef met echte vragen uit het spel. Kies een antwoord, lees de uitleg en bekijk de bron. Eén fout stuurt je naar de cel — opnieuw proberen mag altijd.</p>
-        <ul class="sample-facts"><li data-copy="sampleCount">8 geselecteerde vragen, niet de volledige vragenbank</li><li data-copy="sampleFree">Gratis, zonder account of installatie</li><li data-copy="samplePrivacy">Geen overdracht van scores of voortgang naar de app</li></ul>
-        <a class="button primary" id="sample-demo" href="demo/?lang=nl" data-copy="start">Begin de proefronde</a>
-        <p class="fineprint" data-copy="sampleLimit">De volledige app voegt de complete vragenbank, spelrangen, gunsten, hulplijnen en studiemodus toe.</p>
-      </div>
-      <div id="watch" class="watch-card">
-        <div class="watch-heading"><p class="eyebrow" data-copy="actual">Het echte spel</p><h2 data-copy="videoTitle">Zo speelt het.</h2></div>
-        <video id="gameplay" controls playsinline preload="none" poster="video/poster-nl.jpg" width="1080" height="1920" aria-label="Gameplayvideo van Cassatie of Cel">
-          <source id="video-source" src="video/promo-nl.mp4" type="video/mp4">
-          <track id="video-track" kind="captions" src="video/promo-nl.vtt" srclang="nl" label="Nederlands" default>
-          <span data-copy="videoFallback">Je browser ondersteunt deze video niet.</span>
-        </video>
-        <p class="fineprint" data-copy="videoNote">Een korte opname van het echte spel. Zonder muziek; ondertitels zijn beschikbaar.</p>
-      </div>
-    </section>
-    <section class="get-section" aria-labelledby="get-title">
-      <div class="get-intro"><p class="eyebrow" data-copy="full">Het volledige spel</p><h2 id="get-title" data-copy="getTitle">Neem de rechtbank mee.</h2></div>
-      <div class="store-grid">
-        <article class="store-card"><p class="platform">iPhone &amp; iPad</p><h3>App Store</h3><p data-copy="iosBody">Eenmalige aankoop, zonder abonnement. Bekijk de actuele prijs in de App Store.</p><a class="button primary" href="https://apps.apple.com/be/app/id6790086255" target="_blank" rel="noopener noreferrer" data-copy="iosButton">Bekijk in de App Store</a></article>
-        <article class="store-card android-card"><p class="platform">Android</p><h3 data-copy="androidTitle">Test mee op Google Play</h3><p data-copy="androidBody">De Android-versie zit nog in de gesloten testfase. Meld je aan via het testerformulier; daar vind je de voorwaarden en installatie-instructies.</p><a class="button secondary" href="https://forms.gle/mKwj6xQWo4FjbQhSA" target="_blank" rel="noopener noreferrer" data-copy="androidButton">Word Android-tester</a></article>
-      </div>
-    </section>
+  <main>
+    <h1>Het spel is verhuisd / Le jeu a déménagé / Das Spiel ist umgezogen / The game has moved</h1>
+    <p><a id="redirect-target" href="/coc/play/">Ga naar het spel / Voir le jeu / Zum Spiel / Go to the game</a></p>
   </main>
-  <footer class="page-width footer"><p data-copy="privacyNote">Deze pagina voegt geen analytics of advertentietrackers toe.</p><div><a href="../" data-copy="privacy">Privacy en contact</a><span aria-hidden="true"> · </span><a href="mailto:info@verdictstudios.be">info@verdictstudios.be</a></div><p class="fineprint" data-copy="independent">Een onafhankelijk spel van Verdict Studios. Niet verbonden aan of uitgegeven door een overheid of universiteit.</p></footer>
 </body>
 </html>
