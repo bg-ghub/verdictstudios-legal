@@ -15,7 +15,10 @@ test('privacy page remains a public static HTML document with stable language an
   assert.doesNotMatch(html, /http-equiv="refresh"/i);
   assert.doesNotMatch(html, /noindex|google-analytics|googletagmanager|sendBeacon/i);
   assert.deepEqual([...html.matchAll(/<section id="([^"]+)"/g)].map(m => m[1]), languages);
-  for (const lang of languages) assert.match(html, new RegExp(`href="#${lang}"`));
+  for (const lang of languages) {
+    assert.match(html, new RegExp(`href="#${lang}"`));
+    assert.match(html, new RegExp(`href="coc/delete-data/#${lang}"`));
+  }
   for (const [, href] of html.matchAll(/href="([^"]+)"/g)) {
     assert.ok(!/^http:\/\//i.test(href), `insecure link: ${href}`);
   }
