@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://verdictstudios.be/</loc>
+  </url>
+  <url>
+    <loc>https://verdictstudios.be/coc/delete-data/</loc>
+  </url>
+  <url>
+    <loc>https://verdictstudios.be/coc/play/nl/</loc>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://verdictstudios.be/coc/play/nl/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://verdictstudios.be/coc/play/fr/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://verdictstudios.be/coc/play/de/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://verdictstudios.be/coc/play/en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://verdictstudios.be/coc/play/nl/"/>
+  </url>
+  <url>
+    <loc>https://verdictstudios.be/coc/play/fr/</loc>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://verdictstudios.be/coc/play/nl/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://verdictstudios.be/coc/play/fr/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://verdictstudios.be/coc/play/de/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://verdictstudios.be/coc/play/en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://verdictstudios.be/coc/play/nl/"/>
+  </url>
+  <url>
+    <loc>https://verdictstudios.be/coc/play/de/</loc>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://verdictstudios.be/coc/play/nl/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://verdictstudios.be/coc/play/fr/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://verdictstudios.be/coc/play/de/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://verdictstudios.be/coc/play/en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://verdictstudios.be/coc/play/nl/"/>
+  </url>
+  <url>
+    <loc>https://verdictstudios.be/coc/play/en/</loc>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://verdictstudios.be/coc/play/nl/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://verdictstudios.be/coc/play/fr/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://verdictstudios.be/coc/play/de/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://verdictstudios.be/coc/play/en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://verdictstudios.be/coc/play/nl/"/>
+  </url>
+</urlset>
